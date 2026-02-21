@@ -790,6 +790,149 @@
 
    <!-- ===== HEADER ===== -->
    <header>
+      <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Om Krishna Electronics — Logo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0a0f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 20px;
+    font-family: 'Cinzel', serif;
+  }
+
+  .page-label {
+    color: rgba(240,165,0,0.4);
+    font-size: 0.62rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: -30px;
+  }
+
+  /* ====== LOGO CARD - DARK ====== */
+  .logo-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .variant-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.72rem;
+    letter-spacing: 4px;
+    color: rgba(240,165,0,0.35);
+    text-transform: uppercase;
+  }
+
+  .logo-card {
+    padding: 60px 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-card.dark {
+    background: #0e0e16;
+    border: 1px solid rgba(240,165,0,0.12);
+    box-shadow: 0 0 80px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.04);
+  }
+  .logo-card.light {
+    background: #f5f0e8;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  }
+  .logo-card.gold {
+    background: linear-gradient(135deg, #1a1005, #0a0a0f);
+    border: 1px solid rgba(240,165,0,0.3);
+    box-shadow: 0 0 80px rgba(240,165,0,0.08), inset 0 1px 0 rgba(240,165,0,0.1);
+  }
+
+  /* Subtle grid bg */
+  .logo-card.dark::before, .logo-card.gold::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(240,165,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(240,165,0,0.03) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  /* ====== THE ACTUAL LOGO SVG ====== */
+  .logo-svg-wrap {
+    position: relative;
+    z-index: 2;
+  }
+
+  svg.main-logo {
+    width: 480px;
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  /* Download row */
+  .download-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .dl-btn {
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: 1px solid rgba(240,165,0,0.3);
+    color: #f0a500;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: transparent;
+    font-family: 'Cinzel', serif;
+    transition: all 0.3s;
+  }
+  .dl-btn:hover {
+    background: rgba(240,165,0,0.1);
+    border-color: #f0a500;
+  }
+
+  /* Icon only variant */
+  .icon-row {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .icon-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .icon-chip span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    color: rgba(240,165,0,0.3);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
 <!-- ===== DARK VERSION ===== -->
 <div class="logo-showcase">
   <div class="logo-card dark">
@@ -820,14 +963,17 @@
         </defs>
 
         <!-- OM SYMBOL - left icon block -->
+        <!-- Outer decorative circle ring -->
         <circle cx="65" cy="65" r="54" stroke="url(#goldGrad)" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.4"/>
         <circle cx="65" cy="65" r="48" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.15"/>
 
-        <!-- TV screen shape -->
+        <!-- TV screen shape as background of icon -->
         <rect x="18" y="22" width="94" height="72" rx="10" fill="url(#screenGrad)" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.9"/>
+        <!-- Screen bezel inner -->
         <rect x="24" y="28" width="82" height="60" rx="7" fill="none" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.3"/>
 
-        <!-- OM symbol -->
+        <!-- OM (ॐ) symbol inside TV screen, drawn as paths -->
+        <!-- Beautiful OM glyph via text (Devanagari) -->
         <text x="65" y="76" text-anchor="middle"
           font-family="serif" font-size="42" font-weight="700"
           fill="url(#goldGrad2)" filter="url(#glow)"
@@ -837,35 +983,43 @@
         <rect x="55" y="94" width="20" height="8" rx="2" fill="url(#goldGrad)" opacity="0.5"/>
         <rect x="46" y="101" width="38" height="5" rx="3" fill="url(#goldGrad)" opacity="0.35"/>
 
-        <!-- Power dot -->
+        <!-- Power dot on TV -->
         <circle cx="65" cy="107" r="1.8" fill="url(#goldGrad)" opacity="0.7"/>
 
-        <!-- Decorative sparks -->
+        <!-- Decorative corner sparks top-right of TV -->
         <line x1="106" y1="22" x2="112" y2="16" stroke="#f0a500" stroke-width="1" opacity="0.5"/>
         <line x1="109" y1="25" x2="117" y2="22" stroke="#f0a500" stroke-width="0.8" opacity="0.35"/>
         <line x1="112" y1="29" x2="118" y2="28" stroke="#f0a500" stroke-width="0.6" opacity="0.25"/>
 
         <!-- RIGHT SIDE: TEXT -->
+        <!-- Main name -->
         <text x="148" y="52" font-family="Cinzel, serif" font-size="22" font-weight="700"
           letter-spacing="3" fill="url(#goldGrad)" filter="url(#softglow)">OM KRISHNA</text>
 
+        <!-- Thin gold rule -->
         <line x1="148" y1="62" x2="460" y2="62" stroke="url(#goldGrad)" stroke-width="0.7" opacity="0.4"/>
 
+        <!-- Sub word ELECTRONICS -->
         <text x="149" y="82" font-family="Cinzel, serif" font-size="27" font-weight="900"
           letter-spacing="6" fill="white" opacity="0.95">ELECTRONICS</text>
 
+        <!-- Tagline -->
         <text x="150" y="100" font-family="Cormorant Garamond, Georgia, serif" font-style="italic"
           font-size="11.5" font-weight="300" letter-spacing="2.5"
           fill="#f0a500" opacity="0.7">LED TV Repair &amp; Services</text>
 
+        <!-- Tiny decorative diamond accents flanking tagline -->
         <polygon points="144,99 147,96 150,99 147,102" fill="#f0a500" opacity="0.5" transform="translate(0,-1)"/>
 
+        <!-- Small decorative line left of name -->
         <line x1="148" y1="38" x2="148" y2="56" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
 
+        <!-- Year badge -->
       </svg>
     </div>
   </div>
 </div>
+</body>
 
       <nav>
          <a href="#services">Services</a>
