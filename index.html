@@ -790,94 +790,82 @@
 
    <!-- ===== HEADER ===== -->
    <header>
-   <div class="logo-showcase">
-     <div class="logo-card dark">
-       <div class="logo-svg-wrap">
-         <svg class="main-logo" viewBox="0 0 480 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <defs>
-             <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-               <stop offset="0%" stop-color="#ffd060"/>
-               <stop offset="40%" stop-color="#f0a500"/>
-               <stop offset="100%" stop-color="#c87000"/>
-             </linearGradient>
-             <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
-               <stop offset="0%" stop-color="#ffe080"/>
-               <stop offset="100%" stop-color="#f0a500"/>
-             </linearGradient>
-             <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-               <stop offset="0%" stop-color="#1a1a2e"/>
-               <stop offset="100%" stop-color="#0d0d1a"/>
-             </linearGradient>
-             <filter id="glow">
-               <feGaussianBlur stdDeviation="2.5" result="blur"/>
-               <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-             </filter>
-             <filter id="softglow">
-               <feGaussianBlur stdDeviation="4" result="blur"/>
-               <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-             </filter>
-           </defs>
-   
-           <!-- OM SYMBOL - left icon block -->
-           <!-- Outer decorative circle ring -->
-           <circle cx="65" cy="65" r="54" stroke="url(#goldGrad)" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.4"/>
-           <circle cx="65" cy="65" r="48" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.15"/>
-   
-           <!-- TV screen shape as background of icon -->
-           <rect x="18" y="22" width="94" height="72" rx="10" fill="url(#screenGrad)" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.9"/>
-           <!-- Screen bezel inner -->
-           <rect x="24" y="28" width="82" height="60" rx="7" fill="none" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.3"/>
-   
-           <!-- OM (ॐ) symbol inside TV screen, drawn as paths -->
-           <!-- Beautiful OM glyph via text (Devanagari) -->
-           <text x="65" y="76" text-anchor="middle"
-             font-family="serif" font-size="42" font-weight="700"
-             fill="url(#goldGrad2)" filter="url(#glow)"
-             opacity="1">ॐ</text>
-   
-           <!-- TV stand -->
-           <rect x="55" y="94" width="20" height="8" rx="2" fill="url(#goldGrad)" opacity="0.5"/>
-           <rect x="46" y="101" width="38" height="5" rx="3" fill="url(#goldGrad)" opacity="0.35"/>
-   
-           <!-- Power dot on TV -->
-           <circle cx="65" cy="107" r="1.8" fill="url(#goldGrad)" opacity="0.7"/>
-   
-           <!-- Decorative corner sparks top-right of TV -->
-           <line x1="106" y1="22" x2="112" y2="16" stroke="#f0a500" stroke-width="1" opacity="0.5"/>
-           <line x1="109" y1="25" x2="117" y2="22" stroke="#f0a500" stroke-width="0.8" opacity="0.35"/>
-           <line x1="112" y1="29" x2="118" y2="28" stroke="#f0a500" stroke-width="0.6" opacity="0.25"/>
-   
-           <!-- RIGHT SIDE: TEXT -->
-           <!-- Main name -->
-           <text x="148" y="52" font-family="Cinzel, serif" font-size="22" font-weight="700"
-             letter-spacing="3" fill="url(#goldGrad)" filter="url(#softglow)">OM KRISHNA</text>
-   
-           <!-- Thin gold rule -->
-           <line x1="148" y1="62" x2="460" y2="62" stroke="url(#goldGrad)" stroke-width="0.7" opacity="0.4"/>
-   
-           <!-- Sub word ELECTRONICS -->
-           <text x="149" y="82" font-family="Cinzel, serif" font-size="27" font-weight="900"
-             letter-spacing="6" fill="white" opacity="0.95">ELECTRONICS</text>
-   
-           <!-- Tagline -->
-           <text x="150" y="100" font-family="Cormorant Garamond, Georgia, serif" font-style="italic"
-             font-size="11.5" font-weight="300" letter-spacing="2.5"
-             fill="#f0a500" opacity="0.7">LED TV Repair &amp; Services</text>
-   
-           <!-- Tiny decorative diamond accents flanking tagline -->
-           <polygon points="144,99 147,96 150,99 147,102" fill="#f0a500" opacity="0.5" transform="translate(0,-1)"/>
-   
-           <!-- Small decorative line left of name -->
-           <line x1="148" y1="38" x2="148" y2="56" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
-   
-            <!-- Year badge -->
-           <rect x="388" y="88" width="72" height="17" rx="4" fill="rgba(240,165,0,0.08)" stroke="rgba(240,165,0,0.25)" stroke-width="0.8"/>
-           <text x="424" y="100" font-family="Cinzel, serif" font-size="8.5" font-weight="700"
-             letter-spacing="1.5" fill="#f0a500" opacity="0.7" text-anchor="middle">EST. 2008</text>
-         </svg>
-       </div>
-     </div>
-   </div>
+<!-- ===== DARK VERSION ===== -->
+<div class="logo-showcase">
+  <div class="logo-card dark">
+    <div class="logo-svg-wrap">
+      <svg class="main-logo" viewBox="0 0 480 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffd060"/>
+            <stop offset="40%" stop-color="#f0a500"/>
+            <stop offset="100%" stop-color="#c87000"/>
+          </linearGradient>
+          <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffe080"/>
+            <stop offset="100%" stop-color="#f0a500"/>
+          </linearGradient>
+          <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1a1a2e"/>
+            <stop offset="100%" stop-color="#0d0d1a"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="softglow">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- OM SYMBOL - left icon block -->
+        <circle cx="65" cy="65" r="54" stroke="url(#goldGrad)" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.4"/>
+        <circle cx="65" cy="65" r="48" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.15"/>
+
+        <!-- TV screen shape -->
+        <rect x="18" y="22" width="94" height="72" rx="10" fill="url(#screenGrad)" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.9"/>
+        <rect x="24" y="28" width="82" height="60" rx="7" fill="none" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.3"/>
+
+        <!-- OM symbol -->
+        <text x="65" y="76" text-anchor="middle"
+          font-family="serif" font-size="42" font-weight="700"
+          fill="url(#goldGrad2)" filter="url(#glow)"
+          opacity="1">ॐ</text>
+
+        <!-- TV stand -->
+        <rect x="55" y="94" width="20" height="8" rx="2" fill="url(#goldGrad)" opacity="0.5"/>
+        <rect x="46" y="101" width="38" height="5" rx="3" fill="url(#goldGrad)" opacity="0.35"/>
+
+        <!-- Power dot -->
+        <circle cx="65" cy="107" r="1.8" fill="url(#goldGrad)" opacity="0.7"/>
+
+        <!-- Decorative sparks -->
+        <line x1="106" y1="22" x2="112" y2="16" stroke="#f0a500" stroke-width="1" opacity="0.5"/>
+        <line x1="109" y1="25" x2="117" y2="22" stroke="#f0a500" stroke-width="0.8" opacity="0.35"/>
+        <line x1="112" y1="29" x2="118" y2="28" stroke="#f0a500" stroke-width="0.6" opacity="0.25"/>
+
+        <!-- RIGHT SIDE: TEXT -->
+        <text x="148" y="52" font-family="Cinzel, serif" font-size="22" font-weight="700"
+          letter-spacing="3" fill="url(#goldGrad)" filter="url(#softglow)">OM KRISHNA</text>
+
+        <line x1="148" y1="62" x2="460" y2="62" stroke="url(#goldGrad)" stroke-width="0.7" opacity="0.4"/>
+
+        <text x="149" y="82" font-family="Cinzel, serif" font-size="27" font-weight="900"
+          letter-spacing="6" fill="white" opacity="0.95">ELECTRONICS</text>
+
+        <text x="150" y="100" font-family="Cormorant Garamond, Georgia, serif" font-style="italic"
+          font-size="11.5" font-weight="300" letter-spacing="2.5"
+          fill="#f0a500" opacity="0.7">LED TV Repair &amp; Services</text>
+
+        <polygon points="144,99 147,96 150,99 147,102" fill="#f0a500" opacity="0.5" transform="translate(0,-1)"/>
+
+        <line x1="148" y1="38" x2="148" y2="56" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
+
+      </svg>
+    </div>
+  </div>
+</div>
 
       <nav>
          <a href="#services">Services</a>
