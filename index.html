@@ -790,121 +790,13 @@
 
    <!-- ===== HEADER ===== -->
    <header>
-     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-<style>
-  :root {
-    --neon-cyan: #00f2ff;
-    --neon-purple: #bc13fe;
-    --glass-bg: rgba(15, 23, 42, 0.9);
-  }
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-    background: var(--glass-bg);
-    padding: 20px 35px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 242, 255, 0.2);
-    width: fit-content;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    cursor: default;
-  }
-
-  .logo-container:hover {
-    transform: scale(1.03);
-    border-color: var(--neon-cyan);
-    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
-  }
-
-  /* The Stunning TV + Om Logo */
-  .tv-logo-box {
-    position: relative;
-    width: 70px;
-    height: 55px;
-    margin-right: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* TV Frame */
-  .tv-frame {
-    position: absolute;
-    width: 100%;
-    height: 85%;
-    border: 3px solid var(--neon-cyan);
-    border-radius: 6px;
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 10px var(--neon-cyan);
-  }
-
-  /* TV Stand/Base */
-  .tv-frame::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 25%;
-    width: 50%;
-    height: 4px;
-    background: var(--neon-cyan);
-    border-radius: 10px;
-  }
-
-  .om-symbol {
-    font-size: 2.2rem;
-    color: #fff;
-    text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-purple);
-    z-index: 2;
-    animation: pulse-glow 2.5s infinite alternate;
-  }
-
-  /* Typography */
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .brand-name {
-    font-family: 'Orbitron', sans-serif; /* High-tech font */
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 1px;
-    margin: 0;
-    background: linear-gradient(to right, #fff, var(--neon-cyan));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .tagline {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: var(--neon-purple);
-    margin-top: 5px;
-  }
-
-  @keyframes pulse-glow {
-    0% { opacity: 0.8; filter: drop-shadow(0 0 2px var(--neon-cyan)); }
-    100% { opacity: 1; filter: drop-shadow(0 0 12px var(--neon-purple)); }
-  }
-</style>
-
-<div class="logo-container">
-  <div class="tv-logo-box">
-    <div class="tv-frame"></div>
-    <div class="om-symbol">ॐ</div>
-  </div>
-
-  <div class="logo-text">
-    <div class="brand-name">OM KRISHNA</div>
-    <div class="tagline">LED TV REPAIR & SERVICE</div>
-  </div>
-</div>
+      <div class="logo-wrap">
+         <div class="logo-icon">ॐ</div>
+         <div class="logo-text">
+            Om Krishna Electronics
+            <span>LED TV Repair & Services</span>
+         </div>
+      </div>
       <nav>
          <a href="#services">Services</a>
          <a href="#why">Why Us</a>
